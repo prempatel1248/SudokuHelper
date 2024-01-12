@@ -1,0 +1,138 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    background-color: rgb(255, 233, 223);
+}
+
+h1{
+    font-size: 50px;
+}
+
+#game{
+    display: flex;
+    justify-content: center;
+}
+
+#board{
+    width: 450px;
+    height: 450px;
+    margin: 0px 50px 0px 0px;
+}
+
+.tile{
+    width: 48px;
+    height: 49px;
+    border: 1px solid rgb(155, 155, 155);
+
+    /* Text */
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#digits{
+    width: 50px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+}
+
+.number{
+    width: 44px;
+    height: 44px;
+    border: 1.2px solid black;
+    margin: auto;
+
+    /* Text */
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.number-selected{
+    background-color: rgb(101, 101, 101);
+    color: rgb(255, 228, 214);
+}
+.number:hover{
+    background-color: rgb(101, 101, 101);
+}
+
+.tile-selected{
+    font-weight: bold;
+    background-color: rgb(183, 183, 183);
+}
+.tile:hover{
+    background-color: rgb(183, 183, 183);
+}
+
+.horizontal-line{
+    border-bottom: 1px solid black;
+}
+.horizontalline{
+    border-top: 1px solid black;
+}
+.verticalline{
+    border-left: 1px solid black;
+}
+.vertical-line{
+    border-right: 1px solid black;
+}
+.border-top{
+    border-top: 2px solid black;
+}
+.border-right{
+    border-right: 2px solid black;
+}
+.border-bottom{
+    border-bottom: 2px solid black;
+}
+.border-left{
+    border-left: 2px solid black;
+}
+
+
+#buttons{
+    width: 250px;
+    margin: 0px 0px 0px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#getAnswer{
+    background-color: rgb(255, 102, 19);
+    height: 50px;
+    width: 200px;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0px;
+    border-radius: 10px;
+}
+#getAnswer:hover{
+    color: rgb(255, 233, 223);
+}
+
+#getHint{
+    background-color: rgb(255, 102, 19);
+    height: 50px;
+    width: 200px;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0px;
+    border-radius: 10px;
+}
+#getHint:hover{
+    color: rgb(255, 233, 223);
+}
+
+#notValid{
+    height: 50px;
+    width: 250px;
+    font-weight: bold;
+    font-size: 20px;
+}
